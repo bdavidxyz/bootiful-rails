@@ -1,0 +1,58 @@
+/** 
+* Custom settings
+* Any settings that is not from Bootstrap should be
+* boldly prefixed (here with "my-") to avoid confusions.
+*/
+$my-navbar-height: 100px;
+ 
+/** 
+* Bootstrap settings. It will overrides
+* any bootstrap variable defined in bootstrap/scss/_variables.scss
+*/
+$enable-negative-margins: true;
+
+$display-font-sizes: (
+  1: 5.5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+$display-font-weight: 500;
+
+
+$lead-font-size:   1.4rem;
+$lead-font-weight: 400;
+$btn-font-weight: 500;
+
+/**
+ *  import the necessary Bootstrap files 
+ */
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "./custom_utilities";
+
+
+/** 
+* Overrides an existing Bootstrap class
+* 
+*   Sometimes it is not possible to customise bootstrap,
+*   unless you modify the source code.
+*   Instead, just redefine class as below is just cleaner,
+*   and it ensure you can upgrade Bootstrap's version at any time.
+*/
+.btn {
+  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 1px 1px 0 rgb(116 129 141 / 12%), 0 0 0 1px rgb(116 129 141 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 5px 0 rgb(116 129 141 / 16%);
+}
+
+.btn-primary {
+  transition: transform .2s, background .3s, box-shadow .3s, color .3s;
+}
+
+/** 
+* Overrides defaults (from Bootstrap or not)
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+}
