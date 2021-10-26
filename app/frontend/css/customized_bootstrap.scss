@@ -11,7 +11,6 @@ $my-navbar-height: 100px;
 */
 $enable-negative-margins: true;
 
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -35,6 +34,7 @@ $gray-900: #1e2029;
 
 $link-decoration:  none; 
 
+
 $lead-font-size:   1.4rem;
 $lead-font-weight: 400;
 $btn-font-weight: 500;
@@ -55,12 +55,23 @@ $btn-font-weight: 500;
 *   Instead, just redefine class as below is just cleaner,
 *   and it ensure you can upgrade Bootstrap's version at any time.
 */
-.btn {
-  box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 1px 1px 0 rgb(116 129 141 / 12%), 0 0 0 1px rgb(116 129 141 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 5px 0 rgb(116 129 141 / 16%);
-}
+html {
 
-.btn-primary {
-  transition: transform .2s, background .3s, box-shadow .3s, color .3s;
+  .btn {
+    box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 1px 1px 0 rgb(116 129 141 / 12%), 0 0 0 1px rgb(116 129 141 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 5px 0 rgb(116 129 141 / 16%);
+  }
+
+  .btn-primary {
+    transition: transform .2s, background .3s, box-shadow .3s, color .3s;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: $gray-900;
+    &:hover {
+      color: $black;
+    }
+  }  
+
 }
 
 /** 

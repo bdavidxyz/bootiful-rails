@@ -1,7 +1,7 @@
 <header>
   <nav class="navbar navbar-expand-md navbar-light bg-white" aria-label="navbar">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand me-3" href="#">
         <%= image_pack_tag 'media/img/shaperuby.svg', size: '120x60', alt: 'Ruby Shape' %>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#actualNavbar" aria-controls="actualNavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -10,15 +10,18 @@
       <div class="collapse navbar-collapse" id="actualNavbar">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active ms-3" aria-current="page" href="#">Home</a>
+            <a class="nav-link fw-500" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="#">Documentation</a>
+            <a class="nav-link fw-500" href="#">Documentation</a>
           </li>
         </ul>
-        <form>
-          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
-        </form>
+        <div class="ms-auto navbar-nav">
+          <a href="#" class="nav-link fw-500 me-3">Sign in</a>
+          <a class="btn btn-dark fw-500" href="#">
+            Start for free
+          </a>
+        </div>
       </div>
     </div>
   </nav>
