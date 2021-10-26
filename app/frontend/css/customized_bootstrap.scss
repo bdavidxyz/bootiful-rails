@@ -11,16 +11,29 @@ $my-navbar-height: 100px;
 */
 $enable-negative-margins: true;
 
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1140px
+);
+
 $display-font-sizes: (
   1: 5.5rem,
   2: 4.5rem,
   3: 4rem,
   4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
+  5: 2.5rem,
+  6: 2rem
 );
-$display-font-weight: 500;
+$display-font-weight: 700;
+$headings-font-weight: 700;
 
+$gray-900: #1e2029;
+
+$link-decoration:  none; 
 
 $lead-font-size:   1.4rem;
 $lead-font-weight: 400;

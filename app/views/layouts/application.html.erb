@@ -8,9 +8,15 @@
 
     <%= stylesheet_pack_tag 'application', media: 'all' %>
     <%= javascript_pack_tag 'application' %>
+
+    <link rel="icon" href="data:,">
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/header' %>
+    <main>
+      <%= yield %>
+    </main>
+    <%= render 'shared/footer' %>
   </body>
 </html>
