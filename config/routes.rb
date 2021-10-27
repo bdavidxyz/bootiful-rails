@@ -1,5 +1,5 @@
 Rails.application.routes.draw do  
   get "welcome/index"  
-  get "login", to: 'login#index'
+  resources 'login', only: [:index, :create]
   root to: "welcome#index"  
 end  
