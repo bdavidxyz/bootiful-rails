@@ -25,7 +25,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1140px
+  xxl: 1320px
 );
 
 $display-font-sizes: (
@@ -49,10 +49,12 @@ $lead-font-size:   1.4rem;
 $lead-font-weight: 400;
 $btn-font-weight: 500;
 
-
-
 $btn-hover-bg-shade-amount:       60%;
 $btn-hover-bg-tint-amount:        60%;
+
+$form-label-font-size:   0.875rem;
+$form-label-font-weight: 500;
+$form-label-color:       #12141d;
 
 /**
  *  import the necessary Bootstrap files 
