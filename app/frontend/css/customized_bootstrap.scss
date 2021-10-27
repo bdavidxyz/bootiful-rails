@@ -11,6 +11,15 @@ $my-navbar-height: 100px;
 */
 $enable-negative-margins: true;
 
+$primary: #0d58c9;
+
+
+$card-border-radius: 13px;
+$card-border-color: rgb(230, 236, 241);
+$box-shadow: 0 3px 20px 0 rgba(116,129,141,.12);
+// $card-box-shadow: 0 3px 20px 0 rgba(116,129,141,.12);
+// $card-box-shadow: none;
+
 $container-max-widths: (
   sm: 540px,
   md: 720px,
@@ -33,6 +42,7 @@ $headings-font-weight: 700;
 $gray-900: #1e2029;
 
 $link-decoration:  none; 
+$link-hover-decoration: underline;
 
 
 $lead-font-size:   1.4rem;
@@ -44,7 +54,8 @@ $btn-font-weight: 500;
  */
 @import "~bootstrap/scss/functions";
 @import "~bootstrap/scss/variables";
-@import "./custom_utilities";
+@import "./utility_api";
+@import "./utility_custom";
 
 
 /** 
