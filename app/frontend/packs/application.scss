@@ -1,5 +1,3 @@
 @import '../css/customized_bootstrap.scss';
 @import "~bootstrap/scss/bootstrap";
 
-// Automagically loads all our custom components thanks to node-sass-glob-importer
-@import '../css/components/*.scss';
