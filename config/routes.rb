@@ -1,6 +1,11 @@
 Rails.application.routes.draw do  
-  get "welcome/index"  
   resources 'login', only: [:index, :create]
   resources 'signup', only: [:index, :create]
+
+  get "welcome/index"  
   root to: "welcome#index"  
+
+  resources 'admin', only: [:index]
+
+
 end  

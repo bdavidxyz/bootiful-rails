@@ -66,7 +66,6 @@ $form-label-color:       #12141d;
 *   and it ensure you can upgrade Bootstrap's version at any time.
 */
 html {
-
   .btn {
     box-shadow: 0 0 0 0 transparent, 0 0 0 0 transparent, 0 1px 1px 0 rgb(116 129 141 / 12%), 0 0 0 1px rgb(116 129 141 / 16%), 0 0 0 0 transparent, 0 0 0 0 transparent, 0 2px 5px 0 rgb(116 129 141 / 16%);
   }
@@ -74,14 +73,26 @@ html {
   .btn-primary {
     transition: transform .2s, background .3s, box-shadow .3s, color .3s;
   }
+}
 
+// Override any Bootstrap props linked to the public website (landing page, faq, etc)
+.site {
   .navbar-light .navbar-nav .nav-link {
     color: $gray-900;
     &:hover {
       color: $black;
     }
-  }  
+  }    
+}
 
+// Override any Bootstrap props linked to the admin dashboard (all pages under the /admin URL)
+.admin {
+  .navbar-light .navbar-nav .nav-link {
+    color: $white;
+    &:hover {
+      color: $gray-500;
+    }
+  }      
 }
 
 /** 
