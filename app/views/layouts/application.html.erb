@@ -1,4 +1,4 @@
-<% is_minimal = request.path_info.in?(['/login', '/signup']) %>
+<% is_minimal = request.path_info.in?(['/login', '/signup']) || request.path_info.include?('profile') %>
 
 <!DOCTYPE html>
 <html>
