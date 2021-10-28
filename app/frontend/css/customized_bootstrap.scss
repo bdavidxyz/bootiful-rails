@@ -89,20 +89,20 @@ html {
 .admin {
   .nav-item {
     .nav-link {
-      color: $white;
-      font-weight: 500;
+      color: $gray-500;
+      font-weight: 600;
     }
     svg {
-      fill: $white;
+      fill: $gray-500;
       transition: fill 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;;
     }
   }      
   .nav-item:hover {
     .nav-link {
-      color: $gray-500;
+      color: $white;
     }
     svg {
-      fill: $gray-500;
+      fill: $white;
       transition: fill 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;;
     }
   }      
