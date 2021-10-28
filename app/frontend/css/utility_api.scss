@@ -2,12 +2,11 @@
 $utilities: (
 
   // will underline text
-  // hightlight-hero: linear-gradient(359deg,#b7cffa 24%,transparent 0)
   "highlight": (
     class: "highlight",
     property: "background",
     values: (
-      "hero": linear-gradient(359deg,#b7cffa 24%,transparent 0),
+      "hero": linear-gradient(360deg, #b7fabf 24%, transparent 0),
     )
   ),
 
