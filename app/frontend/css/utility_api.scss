@@ -6,7 +6,7 @@ $utilities: (
     class: "highlight",
     property: "background",
     values: (
-      "hero": linear-gradient(360deg, #cbb7fa 24%, transparent 0),
+      "hero": linear-gradient(360deg, #b7edfa 24%, transparent 0),
     )
   ),
 
@@ -21,6 +21,14 @@ $utilities: (
       700: 700,
       800: 800,
       900: 900,
+    )
+  ),
+
+  "small-font-size": (
+    class: "fs",
+    property: "font-size",
+    values: (
+      'small': $small-font-size,
     )
   ),
 
