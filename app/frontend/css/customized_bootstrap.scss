@@ -1,11 +1,4 @@
 /** 
-* Custom settings
-* Any settings that is not from Bootstrap should be
-* boldly prefixed (here with "my-") to avoid confusions.
-*/
-$my-navbar-height: 100px;
-
-/** 
 * Bootstrap settings. It will overrides
 * any bootstrap variable defined in bootstrap/scss/_variables.scss
 */
@@ -18,12 +11,14 @@ $card-border-radius: 13px;
 $card-border-color: rgb(230, 236, 241);
 $box-shadow: 0 3px 20px 0 rgba(116, 129, 141, .12);
 
-$display-font-sizes: (1: 5.5rem,
-2: 4.5rem,
-3: 4rem,
-4: 3.5rem,
-5: 2.5rem,
-6: 2rem);
+$display-font-sizes: (
+  1: 5.5rem,
+  2: 4.5rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 2.5rem,
+  6: 2rem
+);
 $display-font-weight: 700;
 $headings-font-weight: 700;
 
@@ -74,6 +69,7 @@ $btn-hover-bg-tint-amount: 60%;
 $form-label-font-size: 0.875rem;
 $form-label-font-weight: 500;
 $form-label-color: #12141d;
+
 
 /**
  *  import the necessary Bootstrap files 
