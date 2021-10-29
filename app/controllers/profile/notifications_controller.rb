@@ -1,5 +1,6 @@
 class Profile::NotificationsController < ApplicationController
 
+  layout 'profile'
 
   def show
   end

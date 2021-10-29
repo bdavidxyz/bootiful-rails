@@ -1,0 +1,10 @@
+<div class="secondarynav bg-light mb-3 flex-center border-bottom" style="min-height: 48px">
+  <div class="container py-1">
+    <div class="d-flex flex-row flex-wrap">
+      <a class="btn btn-secondarynav shadow-none <%= request.path_info == '/profile' ? 'active' : '' %>" href="/profile">Account</a>
+      <a class="btn btn-secondarynav shadow-none <%= request.path_info == '/profile/notification' ? 'active' : '' %>" href="/profile/notification">Notifications</a>
+      <a class="btn btn-secondarynav shadow-none <%= request.path_info == '/profile/delete' ? 'active' : '' %>" href="/profile/delete">Danger Zone</a>
+      <a class="btn btn-secondarynav shadow-none <%= request.path_info == '/profile/billing' ? 'active' : '' %>" href="/profile/billing">Billing</a>
+    </div>
+  </div>
+</div>
