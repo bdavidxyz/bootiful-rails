@@ -29,7 +29,38 @@ $display-font-sizes: (
 $display-font-weight: 700;
 $headings-font-weight: 700;
 
+$white:    #fff ; //!default
+$gray-100: #f8f9fa ; //!default
+$gray-200: #e9ecef ; //!default
+$gray-300: #dee2e6 ; //!default
+$gray-400: #ced4da ; //!default
+$gray-500: #adb5bd ; //!default
+$gray-600: #6c757d ; //!default
+$gray-700: #495057 ; //!default
+$gray-800: #343a40 ; //!default
 $gray-900: #1e2029;
+$black:    #000 ; //!default
+
+$blue:    #0d58c9;
+$indigo:  #463dbb;
+$purple:  #4f44e0;
+$pink:    #e83e8c;
+$red:     #e34f2f;
+$orange:  #df7800;
+$yellow:  #ffc107;
+$green:   #219464;
+$teal:    #31bc60;
+$cyan:    #88b3f0;
+
+$primary:       #0d58c9;
+$secondary:     #89898e;
+$success:       #31bc60;
+$info:          #88b3f0;
+$warning:       #df7800;
+$danger:        #e34f2f;
+$light:         #fbfbfc;
+$dark:          #1e2029;
+
 
 $link-decoration:  none; 
 $link-hover-decoration: underline;
@@ -71,6 +102,7 @@ html {
   .btn-primary {
     transition: transform .2s, background .3s, box-shadow .3s, color .3s;
   }
+
 }
 
 // Override any Bootstrap props linked to the public website (landing page, faq, etc)

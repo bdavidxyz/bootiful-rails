@@ -4,6 +4,7 @@ class LoginController < ApplicationController
   end
 
   def create
+    redirect_to profile_path
   end
 
 end  

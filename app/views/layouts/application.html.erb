@@ -1,4 +1,4 @@
-<% is_minimal = request.path_info.in?(['/login', '/signup']) || request.path_info.include?('profile') %>
+<% is_minimal = request.path_info.in?(['/login', '/signup']) %>
 
 <!DOCTYPE html>
 <html>
@@ -14,9 +14,9 @@
     <link rel="icon" href="data:,">
   </head>
 
-  <body class="site <%= is_minimal ? 'light-grey' : '' %>">
+  <body class="site <%= is_minimal ? 'bg-lightgrey' : '' %>">
 
-    <%= render 'shared/header' unless is_minimal %>
+    <%= render 'shared/site_nav' unless is_minimal %>
 
     <main>
       <%= yield %>
