@@ -107,7 +107,7 @@ html {
 
 // Override any Bootstrap props linked to the public website (landing page, faq, etc)
 .site {
-  .navbar-light .navbar-nav .nav-link {
+  .navbar-nav .nav-link {
     color: $gray-900;
     &:hover {
       color: $black;
