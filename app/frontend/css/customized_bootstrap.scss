@@ -170,6 +170,10 @@ html {
     }
   }
 
+  .table > tbody {
+    border-top: (1 * $table-border-width) solid $table-group-separator-color;
+  }
+
 }
 
 /** 
