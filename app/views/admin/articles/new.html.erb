@@ -44,8 +44,8 @@
       </div>
       <div class="ms-2 mb-1">
         <div>
-          <button type="button" class="d-flex justify-content-center align-items-center btn btn-primary btn-sm">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16"> <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/> <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
+          <button type="button" class="d-flex justify-content-center align-items-center btn btn-primary btn-sm" onclick="window.location.href='/admin/articles'">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-list" viewBox="0 0 16 16"> <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/> <path d="M5 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 5 8zm0-2.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0 5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-1-5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zM4 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0zm0 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/> </svg>
             <span class="text-sm ms-2">List</span>
           </button>
           </div>
@@ -62,7 +62,7 @@
         <div class="col-12">
           <div id="div_id_name" class="mb-3">
             <label for="id_name" class="form-label requiredField">
-              Article name<span class="asteriskField">*</span>
+              Article name<span class="asteriskField ms-1">*</span>
             </label>
             <input type="text" name="name" maxlength="256" class="textinput textInput form-control" required="" id="id_name">
             <small id="hint_id_name" class="form-text text-muted">To help you recognize it later</small>
@@ -87,7 +87,7 @@
         <div class="col-12">
           <div id="div_id_query" class="mb-3">
             <label for="id_query" class="form-label requiredField">
-              Quality metric<span class="asteriskField">*</span>
+              Quality metric<span class="asteriskField ms-1">*</span>
             </label>
             <select name="query" class="select form-select" id="id_query">
               <option value="visitors_sum">Weight</option>
@@ -103,7 +103,7 @@
         <div class="col-auto col-md-4">
           <div id="div_id_operator" class="mb-3">
             <label for="id_operator" class="form-label requiredField">
-              Trigger when the metric is<span class="asteriskField">*</span>
+              Trigger when the metric is<span class="asteriskField ms-1">*</span>
             </label>
             <select name="operator" class="select form-select" id="id_operator">
               <option value="gt">Above</option>
@@ -116,7 +116,7 @@
         <div class="col-auto col-md-4">
           <div id="div_id_threshold" class="mb-3">
             <label for="id_threshold" class="form-label requiredField">
-              Threshold<span class="asteriskField">*</span>
+              Threshold<span class="asteriskField ms-1">*</span>
             </label>
             <input type="number" name="threshold" class="numberinput form-control" required="" id="id_threshold">
           </div>
@@ -124,7 +124,7 @@
         <div class="col-auto col-md-4">
           <div id="div_id_period" class="mb-3">
             <label for="id_period" class="form-label requiredField">
-              Unit<span class="asteriskField">*</span>
+              Unit<span class="asteriskField ms-1">*</span>
             </label>
             <select name="period" class="select form-select" id="id_period">
               <option value="Minutes">Minutes</option>
