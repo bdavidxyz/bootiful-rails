@@ -13,11 +13,8 @@
 <body class="admin container-fluid bg-light">
   <div class="row flex-nowrap">
     <%= render 'shared/admin_nav' %>
-    <div class="col py-3 lead m-4">
-      <h1 class="display-6">Admin dashboard</h1>
-      <div class="lead">
-        The admin dashboard is a work-in-progress. Please wait for future releases...
-      </div>
+    <div class="col py-3 m-4">
+      <%= yield %>
     </div>
   </div>
 </body>

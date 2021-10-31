@@ -13,7 +13,13 @@ Rails.application.routes.draw do
     resource :notification, only: [:show, :update]
   end
 
-  resources 'admin', only: [:index]
+  namespace :admin do
+    resources :users
+    resources :articles
+    resource :dashboard, only: [:show]
+    root :to => "dashboards#show"
+  end
+
 
 
 end  

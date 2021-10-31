@@ -1,0 +1,106 @@
+<div class="card p-3 p-lg-4 flex-column justify-content-center align-items-between">
+  <form method="post">
+    <input type="hidden" name="csrfmiddlewaretoken" value="7FBkG4SPsRXg6xdYERuPrAhWJABu5AzyvQ35afcvLva0hYC29h68i4pyhkEpiE2K">
+    <fieldset>
+      <legend class="h6 fw-600 mb-3">General</legend>
+      <div class="row ">
+        <div class="col-12">
+          <div id="div_id_name" class="mb-3">
+            <label for="id_name" class="form-label requiredField">
+              Article name<span class="asteriskField">*</span>
+            </label>
+            <input type="text" name="name" maxlength="256" class="textinput textInput form-control" required="" id="id_name">
+            <small id="hint_id_name" class="form-text text-muted">To help you recognize it later</small>
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <div id="div_id_enabled" class="mb-3">
+              <input type="checkbox" name="enabled" class="checkboxinput form-check-input" id="id_enabled" checked="">
+              <label for="id_enabled" class="form-check-label">
+                Viewable
+              </label>
+              <small id="hint_id_enabled" class="form-text text-muted">Uncheck to hide if from suppliers</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="h6 fw-600 mb-3 mt-4">Alert conditions</legend>
+      <div class="row ">
+        <div class="col-12">
+          <div id="div_id_query" class="mb-3">
+            <label for="id_query" class="form-label requiredField">
+              Quality metric<span class="asteriskField">*</span>
+            </label>
+            <select name="query" class="select form-select" id="id_query">
+              <option value="visitors_sum">Weight</option>
+              <option value="views_sum">Height</option>
+              <option value="page_load_avg">Width</option>
+              <option value="page_load_p50">Length</option>
+              <option value="page_load_p95">Appearance</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row ">
+        <div class="col-auto col-md-4">
+          <div id="div_id_operator" class="mb-3">
+            <label for="id_operator" class="form-label requiredField">
+              Trigger when the metric is<span class="asteriskField">*</span>
+            </label>
+            <select name="operator" class="select form-select" id="id_operator">
+              <option value="gt">Above</option>
+              <option value="gte">Above or equal to</option>
+              <option value="lt">Below</option>
+              <option value="lte">Below or equal to</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-auto col-md-4">
+          <div id="div_id_threshold" class="mb-3">
+            <label for="id_threshold" class="form-label requiredField">
+              Threshold<span class="asteriskField">*</span>
+            </label>
+            <input type="number" name="threshold" class="numberinput form-control" required="" id="id_threshold">
+          </div>
+        </div>
+        <div class="col-auto col-md-4">
+          <div id="div_id_period" class="mb-3">
+            <label for="id_period" class="form-label requiredField">
+              Unit<span class="asteriskField">*</span>
+            </label>
+            <select name="period" class="select form-select" id="id_period">
+              <option value="Minutes">Minutes</option>
+              <option value="Degree" selected="">Degree</option>
+              <option value="Angle">Angle</option>
+              <option value="Centimeters">Centimeters</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <fieldset>
+      <legend class="h6 fw-600 mb-3 mt-4">Manager Notification</legend>
+      <div class="row ">
+        <div class="col-12">
+          <div id="div_id_integrations" class="mb-3">
+            <label for="id_integrations" class="form-label">
+              Enter a text for the manager
+            </label>
+            <textarea name="integrations" class="selectmultiple form-select" id="id_integrations" multiple="">
+            </textarea>
+            <small id="hint_id_integrations" class="form-text text-muted">In case of a new article, manager will be notified immediately.</small>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+    <div class="buttonHolder justify-content-between">
+      <div>
+        <input type="button" name="cancel" value="Cancel" class="btn btn bg-white btn-sm" id="button-id-cancel" onclick="window.history.back()">
+        <input type="submit" name="submit" value="Save" class="btn btn-primary btn btn-dark btn-sm" id="submit-id-submit">
+      </div>
+    </div>
+  </form>
+</div>
