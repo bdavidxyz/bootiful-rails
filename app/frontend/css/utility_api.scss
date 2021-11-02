@@ -29,6 +29,15 @@ $utilities: (
     property: "font-size",
     values: (
       'small': $small-font-size,
+      'base09': $font-size-base * 0.9,
+      'base08': $font-size-base * 0.8,
+      'base07': $font-size-base * 0.7,
+      'base06': $font-size-base * 0.6,
+      'base05': $font-size-base * 0.5,
+      'base04': $font-size-base * 0.4,
+      'base03': $font-size-base * 0.3,
+      'base02': $font-size-base * 0.2,
+      'base01': $font-size-base * 0.1,
     )
   ),
 
