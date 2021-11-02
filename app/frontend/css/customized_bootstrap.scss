@@ -22,30 +22,30 @@ $display-font-sizes: (
 $display-font-weight: 700;
 $headings-font-weight: 700;
 
-$white: #fff; //!default
-$gray-100: #f8f9fa; //!default
-$gray-200: #e9ecef; //!default
-$gray-300: #dee2e6; //!default
-$gray-400: #ced4da; //!default
-$gray-500: #adb5bd; //!default
-$gray-600: #6c757d; //!default
-$gray-700: #495057; //!default
-$gray-800: #343a40; //!default
-$gray-900: #1e2029;
-$black: #000; //!default
+// $white: #fff; //!default
+// $gray-100: #f8f9fa; //!default
+// $gray-200: #e9ecef; //!default
+// $gray-300: #dee2e6; //!default
+// $gray-400: #ced4da; //!default
+// $gray-500: #adb5bd; //!default
+// $gray-600: #6c757d; //!default
+// $gray-700: #495057; //!default
+// $gray-800: #343a40; //!default
+// $gray-900: #1e2029;
+// $black: #000; //!default
 
-$blue: #0d58c9;
-$indigo: #463dbb;
-$purple: #4f44e0;
-$pink: #e83e8c;
-$red: #e34f2f;
-$orange: #df7800;
-$yellow: #ffc107;
-$green: #219464;
-$teal: #31bc60;
-$cyan: #88b3f0;
+// $blue: #0d58c9;
+// $indigo: #463dbb;
+// $purple: #4f44e0;
+// $pink: #e83e8c;
+// $red: #e34f2f;
+// $orange: #df7800;
+// $yellow: #ffc107;
+// $green: #219464;
+// $teal: #31bc60;
+// $cyan: #88b3f0;
 
-$primary: #0d58c9;
+// $primary: #0d58c9;
 $secondary: #89898e;
 $success: #31bc60;
 $info: #88b3f0;
@@ -172,6 +172,10 @@ html {
 
   .table > tbody {
     border-top: (1 * $table-border-width) solid $table-group-separator-color;
+  }
+
+  td {
+    vertical-align: middle;
   }
 
 }
