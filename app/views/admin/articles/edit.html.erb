@@ -1,6 +1,6 @@
 <div class="row mb-3">
   <div class="col-12 col-lg-5 justify-content-start align-items-start mb-lg-2">
-    <h3 class="mb-2 mb-lg-0 fw-bold truncate">Create new article</h3>
+    <h3 class="mb-2 mb-lg-0 fw-bold truncate">Edit article</h3>
   </div>
   <div class="col-12 col-lg-auto flex-1 ms-auto justify-content-center align-items-end mb-lg-2">
     <div class="d-flex flex-row w-100 h-100 justify-content-start justify-content-lg-end align-items-center flex-wrap">
@@ -54,8 +54,7 @@
   </div>
 </div>
 <div class="card p-3 p-lg-4 flex-column justify-content-center align-items-between">
-  <form method="post">
-    <input type="hidden" name="csrfmiddlewaretoken" value="7FBkG4SPsRXg6xdYERuPrAhWJABu5AzyvQ35afcvLva0hYC29h68i4pyhkEpiE2K">
+  <form method="get" action="/admin/articles?success=true">
     <fieldset>
       <legend class="h6 fw-600 mb-3">General</legend>
       <div class="row ">
@@ -64,7 +63,7 @@
             <label for="id_name" class="form-label requiredField">
               Article name<span class="asteriskField ms-1">*</span>
             </label>
-            <input type="text" name="name" maxlength="256" class="textinput textInput form-control" required="" id="id_name">
+            <input type="text" name="name" maxlength="256" class="textinput textInput form-control" required="" id="id_name" value="Any name">
             <small id="hint_id_name" class="form-text text-muted">To help you recognize it later</small>
           </div>
         </div>
@@ -118,7 +117,7 @@
             <label for="id_threshold" class="form-label requiredField">
               Threshold<span class="asteriskField ms-1">*</span>
             </label>
-            <input type="number" name="threshold" class="numberinput form-control" required="" id="id_threshold">
+            <input type="number" name="threshold" class="numberinput form-control" required="" value="42" id="id_threshold">
           </div>
         </div>
         <div class="col-auto col-md-4">
@@ -140,13 +139,12 @@
       <legend class="h6 fw-600 mb-3 mt-4">Description</legend>
       <div class="row ">
         <div class="col-12">
-          <div id="div_id_integrations" class="mb-3">
-            <label for="id_integrations" class="form-label">
+          <div id="div_id_description" class="mb-3">
+            <label for="id_description" class="form-label">
               Enter a text for the manager
             </label>
-            <textarea name="integrations" class="selectmultiple form-select" id="id_integrations" multiple="">
-            </textarea>
-            <small id="hint_id_integrations" class="form-text text-muted">In case of a new article, manager will be notified immediately.</small>
+            <textarea name="description" class="form-select">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, earum optio deleniti corrupti sapiente ullam voluptatum quos harum vitae laborum fugit. Earum eos omnis hic, quam eaque, recusandae illum beatae.</textarea>
+            <small id="hint_id_description" class="form-text text-muted">In case of a new article, manager will be notified immediately.</small>
           </div>
         </div>
       </div>

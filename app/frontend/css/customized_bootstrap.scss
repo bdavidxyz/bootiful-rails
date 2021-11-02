@@ -70,6 +70,11 @@ $form-label-font-size: 0.875rem;
 $form-label-font-weight: 500;
 $form-label-color: #12141d;
 
+$transition-base:             all .55s ease-in-out !default;
+$transition-fade:             opacity .55s linear !default;
+
+$transition-collapse:         height .75s ease !default;
+$transition-collapse-width:   width .75s ease !default;
 
 /**
  *  import the necessary Bootstrap files 
